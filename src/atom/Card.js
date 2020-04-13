@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cards = (props) => {
     return (
-        <div className="card flex-center bg-primary text-white custome-height-16" onClick={()=> props.handleClick(props.id)}>
+        <div className="card flex-center bg-primary text-white custome-height-16" onClick={props.handleClick ? ()=> props.handleClick(props.id) : null}>
             <div className="card-header w-100">
                 <img className="p-3 w-100 custome-height-10" src={props.logo} alt={props.title}/>
             </div>

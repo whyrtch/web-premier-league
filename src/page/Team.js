@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from "react";
 import {connect} from "react-redux";
 import ListCard from "../component/ListCard";
+import Loading from "../atom/Loading";
 
 class Team extends Component{
     constructor(props) {
@@ -14,9 +15,14 @@ class Team extends Component{
             <Fragment>
                 {
                     this.props.loading ?
-                        "loading"
+                       <Loading/>
                         :
-                        <ListCard data={this.props.squad} loading={this.props.loading}/>
+                        <div>
+                            <div className="h3 mt-4 w-100 flex-center">
+                                Squad List
+                            </div>
+                            <ListCard data={this.props.squad} loading={this.props.loading}/>
+                        </div>
                 }
             </Fragment>
         );
