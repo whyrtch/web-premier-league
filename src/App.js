@@ -6,17 +6,21 @@ import reduxStore from './redux/store';
 import Header from "./component/Header";
 import Team from "./page/Team";
 import Home from "./page/Home";
+import About from "./page/About";
 
 function App() {
   return (
       <Provider store={reduxStore}>
           <Header/>
-          <Router>
-              <Switch>
-                  <Route exact path={"/"} component={Home}/>
-                  <Route exact path={"/team"} component={Team}/>
-              </Switch>
-          </Router>
+          <div className="container-fluid">
+              <Router>
+                  <Switch>
+                      <Route exact path={"/"} component={Home}/>
+                      <Route exact path={"/team"} component={Team}/>
+                      <Route exact path={"/about"} component={About}/>
+                  </Switch>
+              </Router>
+          </div>
       </Provider>
   );
 }
