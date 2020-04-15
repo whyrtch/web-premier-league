@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cards = (props) => {
     return (
-        <div className={"card flex-center bg-dark text-white " + props.class} onClick={props.handleClick ? ()=> props.handleClick(props.id) : null}>
+        <div className={"card flex-center bg-secondary text-white " + props.class} onClick={props.handleClick ? ()=> props.handleClick(props.id) : null}>
             {
                 props.logo ?
                     <div className="card-header flex-center w-100">
