@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import {getSelectedTeamAction, getTeamsAction} from "../redux/action";
 import ListCard from "../component/ListCard";
 import {connect} from "react-redux";
@@ -29,7 +29,9 @@ class Home extends Component{
             this.props.history.push("/team")
         }
         return(
-            <ListCard data={this.props.teams} loading={this.props.loading} handleClick={this.cardClicked}/>
+            <Fragment>
+                <ListCard data={this.props.teams} class={"custome-height-16"} loading={this.props.loading} handleClick={this.cardClicked}/>
+            </Fragment>
         );
     }
 }

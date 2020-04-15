@@ -15,8 +15,8 @@ const ListCard = (props) => {
                         :
                         props.data.map(data => {
                             return (
-                                <div className="col-lg-2 py-lg-4" key={data.id}>
-                                    <Card id={data.id} logo={data.crestUrl ? data.crestUrl : Global.imgPerson} title={data.name}
+                                <div className="col-lg-4 p-0" style={{marginBottom : '1.875rem'}} key={data.id}>
+                                    <Card id={data.id} class={props.class} logo={data.crestUrl} title={data.name}
                                           handleClick={props.handleClick}/>
                                 </div>
                             )

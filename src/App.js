@@ -6,6 +6,7 @@ import reduxStore from './redux/store';
 import Header from "./component/Header";
 import Team from "./page/Team";
 import Home from "./page/Home";
+
 import About from "./page/About";
 
 function App() {
