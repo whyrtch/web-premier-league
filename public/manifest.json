@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Premier League",
+  "name": "Premier League Clubs",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://pngriver.com/wp-content/uploads/2018/04/Download-Premier-League-PNG-File.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://pngriver.com/wp-content/uploads/2018/04/Download-Premier-League-PNG-File.pngg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://pngriver.com/wp-content/uploads/2018/04/Download-Premier-League-PNG-File.png",
       "type": "image/png",
       "sizes": "512x512"
     }

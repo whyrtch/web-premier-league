@@ -15,6 +15,8 @@ export const getTeamsAction =()=> {
         dispatch({
             type : 'GET_TEAMS'
         });
+
+
         getAxios(API.apiPremierLeague)
             .then(res => {
                 dispatch({
