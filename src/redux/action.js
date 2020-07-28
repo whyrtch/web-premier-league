@@ -9,7 +9,7 @@ function getAxios(url) {
     return axios.get(url, {headers});
 }
 
-export const getTeamsAction =()=> {
+export const getTeamsAction = async ()=> {
 
     return (dispatch) => {
         dispatch({
@@ -17,7 +17,7 @@ export const getTeamsAction =()=> {
         });
 
 
-        getAxios(API.apiPremierLeague)
+        await getAxios(API.apiPremierLeague)
             .then(res => {
                 dispatch({
                     type: 'GET_TEAMS_SUCCESS',
@@ -33,12 +33,12 @@ export const getTeamsAction =()=> {
     }
 };
 
-export const getSelectedTeamAction = (id) => {
+export const getSelectedTeamAction = async (id) => {
     return (dispatch) => {
         dispatch({
             type: 'GET_SELECTED_TEAM'
         });
-        getAxios(API.apiTeams + id)
+        await getAxios(API.apiTeams + id)
             .then(res => {
             dispatch({
                 type: 'GET_SELECTED_TEAM_SUCCESS',
